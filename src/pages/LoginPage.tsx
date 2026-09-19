@@ -32,8 +32,8 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onSuccess }) => {
   const [mode, setMode] = useState<'login' | 'register' | 'forgot'>('login');
   
   // Login State
-  const [email, setEmail] = useState('ceo@trustlayerlabs.co.in');
-  const [password, setPassword] = useState('Admin@123');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [totpCode, setTotpCode] = useState('');
 
   // Register State
@@ -41,7 +41,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onSuccess }) => {
   const [regRole, setRegRole] = useState<'ADMIN' | 'SALES' | 'FINANCE' | 'STAFF' | 'CLIENT'>('STAFF');
 
   // Forgot Password State
-  const [forgotEmail, setForgotEmail] = useState('ceo@trustlayerlabs.co.in');
+  const [forgotEmail, setForgotEmail] = useState('');
   const [resetToken, setResetToken] = useState('');
   const [newPassword, setNewPassword] = useState('');
   const [forgotStep, setForgotStep] = useState<1 | 2>(1);
